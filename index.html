@@ -12,6 +12,8 @@
             function initFingerprintJS() {
                 const d1 = new Date();
 
+                console.log(window.location);
+
                 FingerprintJS.load().then(function (fp) {
                     fp.get().then(function (result) {
                         const d2 = new Date();
