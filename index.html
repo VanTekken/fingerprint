@@ -3,16 +3,8 @@
     <head>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
         <meta content="utf-8" http-equiv="encoding" />
-        <title>Fingerprintjs3 test</title>
     </head>
     <body>
-        <h1>Fingerprintjs3</h1>
-
-        <p>Your browser fingerprint: <strong id="fp"></strong></p>
-        <p><code id="time" /></p>
-        <p><span id="userAgent" /></p>
-        <p><span id="details" /></p>
-
         <script src="polyfill.min.js"></script>
         <script async src="fp.min.js" onload="initFingerprintJS()"></script>
 
@@ -52,7 +44,7 @@
 
                         console.log(postObj);
                         let post = JSON.stringify(postObj);
-                        const url = "https://51d.at/skl.php";
+                        const url = "/skl.php";
                         let xhr = new XMLHttpRequest();
 
                         xhr.open("POST", url, true);
